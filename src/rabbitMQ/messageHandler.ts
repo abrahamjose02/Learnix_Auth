@@ -15,11 +15,11 @@ export default class MessageHandler{
         try {
             console.log('The operation in auth Service is ',operation,data)
         switch(operation){
-            case 'isAuthenticated' :
+            case 'is-authenticated' :
                 response = await authController.isAuthenticated(data);
                 break;
 
-            case 'verifyToken' :
+            case 'refresh-token' :
                 response = await authController.verifyToken(data);
                 break;
 
